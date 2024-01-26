@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Практическая работа №4</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>JavaScript!</h1>
+    </header>
+    <section>
+        <h2>Что такое JavaScript?</h2>
+        <p>JavaScript — это язык программирования, который используется для добавления интерактивности на веб-сайты. Он позволяет создавать динамически обновляемый контент, управлять мультимедиа, анимировать изображения и многое другое. JavaScript работает в браузере пользователя и может обеспечивать отличный пользовательский опыт без перезагрузки страницы.</p>
+    </section>
+    <section>
+        <h2>Применение JavaScript</h2>
+        <p>JavaScript играет ключевую роль в фронтенд-разработке веб-сайтов, позволяя создавать интерактивные элементы, такие как выпадающие меню, всплывающие окна и формы обратной связи. Также он используется в бэкенд-разработке (Node.js), мобильной разработке (React Native) и даже в создании игр и десктопных приложений.</p>
+    </section>
+    <section>
+        <h2>Ограничения JavaScript</h2>
+        <p>Несмотря на свою универсальность, JavaScript имеет ограничения. Например, он не подходит для выполнения задач, требующих интенсивных вычислений на стороне сервера, и не всегда является лучшим выбором для создания крупномасштабных приложений из-за ограничений в управлении памятью и безопасности. Также, поскольку JavaScript выполняется в браузере пользователя, его возможности могут быть ограничены настройками безопасности браузера.</p>
+    </section>
+    <section>
+        <h2>Интерактивное меню</h2>
+        <button id="practice1">Практическая №1</button>
+        <button id="practice2">Практическая №2</button>
+        <div id="output"></div>
+    </section>
+    <button id="startTest">Начать тест по JavaScript</button>
+    <button id="showSplash">Показать заставку</button>
+    <div id="splashScreen" style="display: none;">
+        <p id="splashContent"></p>
+    </div>
+    <button id="themeToggler" class="theme-toggler">Переключить тему</button>
+    <button id="openThemeSettings">Настройки оформления</button>
+    <div class="theme-settings hidden">
+        <div>
+            <label for="backgroundSelect">Фоновый рисунок:</label>
+            <select id="backgroundSelect">
+                <option value="none">Стандартный (без фона)</option>
+                <option value="pattern1">Рисунок 1</option>
+                <option value="pattern2">Рисунок 2</option>
+            </select>
+        </div>
+        <div>
+            <label for="colorSchemeSelect">Цветовая схема:</label>
+            <select id="colorSchemeSelect">
+                <option value="blue" selected>Синяя</option>
+                <option value="green">Зеленая</option>
+                <option value="red">Красная</option>
+            </select>            
+        </div>
+    </div>    
+    <script src="script.js"></script>
+</body>
+</html>
